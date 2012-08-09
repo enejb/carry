@@ -18,7 +18,9 @@ get_header(); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'content', 'page' ); ?>
+					<?php 
+					$carry_content_template = apply_filters( 'carry_content_template', 'content', $post->post_type );
+					get_template_part( $carry_content_template, 'page' ); ?>
 
 					<?php comments_template( '', true ); ?>
 

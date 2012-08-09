@@ -10,12 +10,14 @@ get_header(); ?>
 
 		<div id="primary" class="site-content">
 			<div id="content" role="main">
-
+			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php carry_content_nav( 'nav-above' ); ?>
-
-				<?php get_template_part( 'content', 'single' ); ?>
+			
+				<?php 
+				$carry_content_template = apply_filters( 'carry_content_template', 'content', $post->post_type );
+				get_template_part( $carry_content_template, 'single' ); ?>
 
 				<?php carry_content_nav( 'nav-below' ); ?>
 

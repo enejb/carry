@@ -79,7 +79,8 @@ get_header(); ?>
 						 * If you want to overload this in a child theme then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						get_template_part( 'content', get_post_format() );
+						$carry_content_template = apply_filters( 'carry_content_template', 'content', $post->post_type );
+						get_template_part( $carry_content_template, get_post_format() );
 					?>
 
 				<?php endwhile; ?>

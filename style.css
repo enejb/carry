@@ -508,6 +508,11 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
+/* pulse */
+.pulse-cpt .pulse{
+	border:none;
+	padding: 0;
+}
 
 /* =Asides
 ----------------------------------------------- */

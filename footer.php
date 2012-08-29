@@ -11,19 +11,21 @@
 
 	</div><!-- #main -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<!-- 
-			<?php do_action( 'carry_credits' ); ?>
-			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'carry' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'carry' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'carry' ), 'carry', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+	<div class="clear"></div>
+</div><!-- .shell .hfeed .site -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class=" shell">
 			
-			-->
+			<div class="site-info">
+			<?php do_action( 'carry_credits' ); ?>
+			Proudly powered by  <a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'carry' ); ?>" rel="generator"><?php printf(  'WordPress', 'carry' ); ?></a>
+			<span class="sep"> and </span>
+			<?php printf( __( '%1$s by %2$s.', 'carry' ), 'Carry', '<a href="http://blog.ubc.ca/beta/" rel="designer">CTLT Dev</a>' ); ?>
+			</div>
+			
 		</div><!-- .site-info -->
+		
 	</footer><!-- .site-footer .site-footer -->
-</div><!-- #page .hfeed .site -->
-
 <?php wp_footer(); ?>
 
 </body>

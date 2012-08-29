@@ -1,27 +1,23 @@
 /*
-Syntax error: Invalid CSS after "...nd-to(tablets) ": expected "}", was "{ max-width: 76..."
-        on line 6 of /Users/candace/Sites/localhost/cms/wp-content/themes/carry/scss/layout.scss
-        from line 23 of /Users/candace/Sites/localhost/cms/wp-content/themes/carry/style.scss
-
-1: /Users/candace/Sites/localhost/cms/wp-content/themes/carry/style.scss
+Syntax error: Undefined variable: "$default-color".
+        on line 9 of /Users/candace/Sites/localhost/cms/wp-content/themes/carry/scss/global.scss
 
 Backtrace:
-/Users/candace/Sites/localhost/cms/wp-content/themes/carry/scss/layout.scss:6
-/Users/candace/Sites/localhost/cms/wp-content/themes/carry/style.scss:23
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/scss/parser.rb:897:in `expected'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/scss/parser.rb:841:in `expected'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/scss/parser.rb:836:in `tok!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/scss/parser.rb:362:in `block'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/scss/parser.rb:355:in `ruleset'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/scss/parser.rb:379:in `block_child'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/scss/parser.rb:369:in `block_contents'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/scss/parser.rb:57:in `stylesheet'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/scss/parser.rb:26:in `parse'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/engine.rb:320:in `_to_tree'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/engine.rb:251:in `to_tree'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/util.rb:297:in `silence_sass_warnings'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/engine.rb:250:in `to_tree'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:144:in `visit_import'
+/Users/candace/Sites/localhost/cms/wp-content/themes/carry/scss/global.scss:9
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/script/variable.rb:50:in `_perform'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/script/node.rb:40:in `perform'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:215:in `visit_prop'
+org/jruby/RubyKernel.java:2096:in `send'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:27:in `visit_children'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:235:in `visit_rule'
 org/jruby/RubyKernel.java:2096:in `send'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
@@ -82,4 +78,4 @@ org/jruby/RubyKernel.java:1419:in `loop'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...nd-to(tablets) \": expected \"}\", was \"{ max-width: 76...\"\A         on line 6 of /Users/candace/Sites/localhost/cms/wp-content/themes/carry/scss/layout.scss\A         from line 23 of /Users/candace/Sites/localhost/cms/wp-content/themes/carry/style.scss\A \A 1: /Users/candace/Sites/localhost/cms/wp-content/themes/carry/style.scss"; }
+  content: "Syntax error: Undefined variable: \"$default-color\".\A         on line 9 of /Users/candace/Sites/localhost/cms/wp-content/themes/carry/scss/global.scss"; }

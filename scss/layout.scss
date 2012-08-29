@@ -1,0 +1,72 @@
+/* =Layout
+----------------------------------------------- */
+.shell{
+	max-width: 960px;
+	margin: 0 auto;
+	@include respond-to(tablets) { max-width: 768px; }
+}
+
+.hfeed{ /* img/dot.gif */
+	background:#FFF url(data:image/gif;base64,R0lGODlhAQABAIAAAMzMzAAAACH5BAAHAP8ALAAAAAABAAEAAAICRAEAOw==) repeat-y 150px;
+	border-right: 1px solid #CCC;
+}
+.site-content {
+	float: left;
+	width: 100%;
+}
+#content {
+	margin: 10px 35% 0 150px;
+	
+}
+
+#main .widget-area {
+	float: left;
+	overflow: hidden;
+	padding: 20px 0 0;
+}
+#secondary { /* Sidebar 1 */
+	margin: 0 0 0 -100%;
+	width: 150px;
+}
+#tertiary { /* Sidebar 2 */
+	margin: 0 0 0 -34%;
+	width: 34%;
+}
+.clear,
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+.site-info{
+	border-top: 1px solid #CCC;
+	padding: 10px 0;
+	margin-left:150px;
+	font-size: 11px;
+	color:#AAA;
+}
+
+/* = The Grid 
+----------------------------------------------- */
+.row{
+	position:relative;
+	overflow: hidden;
+	clear: both;
+}
+.row .half{
+	width: 50%;
+	float: left;
+}
+/* Responsive mixins
+----------------------------------------------- */
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 479px) { @content; }
+  }
+  @else if $media == wide-handhelds {
+    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
+  }
+  
+}
